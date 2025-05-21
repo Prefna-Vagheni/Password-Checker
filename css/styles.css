@@ -1,0 +1,143 @@
+:root {
+  --very-weak: red;
+  --weak: pink;
+  --good: burlywood;
+  --strong: green;
+  --very-strong: #0a764f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-size: 1.6rem;
+}
+/* Utility classes */
+.hidden {
+  display: none;
+}
+
+.very-weak {
+  background-color: var(--very-weak);
+}
+.weak {
+  background-color: var(--weak);
+}
+.good {
+  background-color: var(--good);
+}
+.strong {
+  background-color: var(--strong);
+}
+.very-strong {
+  background-color: var(--very-strong);
+}
+
+.project {
+  display: grid;
+  width: 45rem;
+  height: auto;
+  margin: 5rem auto;
+}
+
+.state-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+}
+
+.state-container article {
+  display: flex;
+  justify-content: right;
+}
+
+.state-container article p {
+  margin-left: 1rem;
+}
+
+.container {
+  width: 100%;
+  min-height: 12rem;
+  background-color: aqua;
+  margin: 0 auto 1rem;
+  padding: 2rem;
+}
+.text {
+  display: flex;
+  font-display: row;
+  justify-content: space-between;
+  align-items: start;
+}
+.length {
+  font-size: 1.6rem;
+  margin: 0 1rem;
+  padding: 0.4rem;
+  width: 2rem;
+  height: 1rem;
+  background-color: gray;
+  color: whitesmoke;
+}
+
+.password-container {
+  position: relative;
+  margin: 2rem 0;
+  width: 100%;
+  height: auto;
+}
+
+.password {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  outline: none;
+  border: none;
+}
+.password-state {
+  width: 100%;
+  height: 2rem;
+  background-color: gray;
+  position: absolute;
+  bottom: -50%;
+  text-align: center;
+}
+
+.password-state span {
+  /* display: block; */
+  position: relative;
+}
+.password-section {
+  position: relative;
+}
+
+.password-section span {
+  position: absolute;
+  display: block;
+  text-align: center;
+  padding: 0.1rem 0;
+  width: 100%;
+  color: whitesmoke;
+  /* height: 100%; */
+}
+span.hidden {
+  display: none;
+}
+
+.inputSpan {
+  font-size: 1.6rem;
+  color: black;
+  /* width: 2rem;
+  height: 2rem; */
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.fa-circle-check {
+  color: blue;
+}

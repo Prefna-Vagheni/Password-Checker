@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
+    <title>Password Checker</title>
+  </head>
+  <body>
+    <header>
+      <h1>Strong Password Checker</h1>
+      <h6>
+        <span class="very-weak">Very Weak</span> |
+        <span class="weak">Weak</span> | <span class="good">Good</span> |
+        <span class="strong">Strong</span> |
+        <span class="very-strong">Very Strong</span>
+      </h6>
+    </header>
+    <main>
+      <section class="project">
+        <section class="container">
+          <article class="text">
+            <p>Type and test the strength of your password.</p>
+            <p>Length: <span class="length">0</span></p>
+          </article>
+          <article class="password-container">
+            <input
+              class="password"
+              type="password"
+              placeholder="Type your password"
+            />
+            <div class="password-state">
+              <section class="password-section">
+                <span class="state very-weak hidden" data-state-data="very-weak"
+                  >Very weak</span
+                >
+                <span class="state weak hidden" data-state-data="weak"
+                  >weak</span
+                >
+                <span class="state good hidden" data-state-data="good"
+                  >Good</span
+                >
+                <span class="state strong hidden" data-state-data="strong"
+                  >Strong</span
+                >
+                <span
+                  class="state very-strong hidden"
+                  data-state-data="very-strong"
+                  >Very strong</span
+                >
+              </section>
+            </div>
+            <span class="inputSpan eye-action">
+              <i class="fa-solid fa-eye open-eye hidden"></i>
+              <i class="fa-solid fa-eye-slash close-eye"></i>
+            </span>
+            <!-- <span class="inputSpan close-eye">
+            </span> -->
+          </article>
+        </section>
+        <section class="state-container">
+          <p>What's include:</p>
+          <article>
+            <p>
+              <i class="lower-case-visible fa-regular fa-circle-xmark"></i>
+              <i
+                class="lower-case-invisible fa-regular fa-circle-check hidden"
+              ></i>
+              Lower case
+            </p>
+            <p>
+              <i class="upper-case-visible fa-regular fa-circle-xmark"></i>
+              <i
+                class="upper-case-invisible fa-regular fa-circle-check hidden"
+              ></i>
+              Uppper case
+            </p>
+            <p>
+              <i class="number-visible fa-regular fa-circle-xmark"></i>
+              <i class="number-invisible fa-regular fa-circle-check hidden"></i>
+              Number
+            </p>
+            <p>
+              <i class="symbol-visible fa-regular fa-circle-xmark"></i>
+              <i
+                class="symbol-invisible fa-regular-invisible fa-circle-check hidden"
+              ></i>
+              Symbol
+            </p>
+          </article>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
